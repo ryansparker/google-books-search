@@ -15,8 +15,11 @@ app.get('/', (req, res) => {
 res.send('We are on home')
 })
 
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("./build"))
+}
 
 
 //How do we start listening to the server
-app.listen(3000);
+app.listen(process.env.PORT);
 
