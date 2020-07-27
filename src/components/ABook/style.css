@@ -1,0 +1,19 @@
+.wrapper {
+    background-color: pink;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+.thumbnail {
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
