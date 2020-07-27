@@ -12,10 +12,6 @@ const savedRoute = require('./routes/saved')
 
 app.use('/saved', savedRoute)
 
-//ROUTES
-app.get('/', (req, res) => {
-res.send('We are on home')
-})
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("./build"))
